@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals"],
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["src/components/ui/**/*.tsx"],
+  "plugins": ["sort", "@tanstack/query", "@typescript-eslint"],
+  "rules": {
+    "@tanstack/query/exhaustive-deps": "error",
+    "@tanstack/query/no-rest-destructuring": "warn",
+    "@tanstack/query/stable-query-client": "error",
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "sort/imports": [
+      "error",
+      {
+        "groups": [
+          { "type": "side-effect", "order": 10 },
+          { "type": "dependency", "order": 20 },
+          { "regex": "^@ui/", "order": 30 },
+          { "regex": "^@components/", "order": 40 },
+          { "regex": "^@/lib/", "order": 40 },
+          { "type": "other", "order": 50 },
+          { "regex": "\\.(png|jpg|svg)$", "order": 60 }
+        ]
+      }
+    ]
+  }
+}
