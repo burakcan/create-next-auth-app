@@ -14,3 +14,6 @@ It has:
 - react-hook-form
 - react-query
 - shadcn
+
+##### Disclaimer
+The initial code was adapted from "create-next-app" and customized for this project.
