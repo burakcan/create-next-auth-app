@@ -10,8 +10,13 @@
   ],
   "description": "Create a Next.js app with authentication using Auth.js",
   "author": "Burak Can <burak@burakcan.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/burakcan/create-next-auth-app"
+  },
   "bin": {
-    "create-next-app": "./dist/index.js"
+    "create-next-auth-app": "./dist/index.js"
   },
   "files": [
     "dist"
